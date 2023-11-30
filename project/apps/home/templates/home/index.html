@@ -1,0 +1,10 @@
+{% extends 'home/base.html' %}
+
+{% block TITULO %}
+    PAGINA PRINCIPAL
+{% endblock  %} 
+
+{% block CONTENIDO %}
+    <a href="{% url 'clientes:home' %}">Ir a Clientes</a>
+    <a href="{% url 'productos:home' %}">Ir a Productos</a>
+{% endblock  %}

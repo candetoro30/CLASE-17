@@ -19,6 +19,7 @@ from django.urls import path, include #INCLUDE sirve para tarer urls de las apps
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("", include("cliente.urls")),
+    path("", include("home.urls")),
+    path("cliente/", include("cliente.urls")),
     path("producto/", include("producto.urls")),
 ]
